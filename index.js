@@ -25,6 +25,12 @@ async function run(){
             const query = {};
             const options = await catagoriesCollection.find(query).toArray();
             res.send(options);
+        });
+
+        app.get('/catagories/:id', (req, res) => {
+            const id = req.params.id;
+            const selectedCatagories = catagoriesCollection.find(c => c._id.products === id);
+            res.send(selectedCatagories);
         })
     }
     finally{
