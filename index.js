@@ -29,10 +29,34 @@ async function run(){
             res.send({token})
         })
 
-        app.get('/catagories/:id', (req, res) => {
-            const id = req.params.id;
-            const selectedCatagories = catagoriesCollection.find(c => c._id.products === id);
-            res.send(selectedCatagories);
+        // app.get('/all-catagories', (req,res)=>{
+        //     res.send(catagories)
+        // })
+
+        app.get('/catagories',async(req, res) =>{
+            const query = {};
+            const options = await catagoriesCollection.find(query).toArray();
+            res.send(options);
+        });
+
+        // app.get('/catagories/:id', (req, res) => {
+        //     const id = req.params.id;
+        //     const selectedCatagories = catagoriesCollection.find(c => c._id.products === id);
+        //     res.send(selectedCatagories);
+        // });
+        
+        // app.get('/singleCatagory/:name', (req, res) => {
+        //     const name = req.params.name;
+        //     const selectedCatagory = singleCatagory.filter(s => s.brand === name);
+        //     res.send(selectedCatagory)
+        //     // console.log(req.params.name);
+        // })
+
+        app.get('/catagories/:name', (req, res) => {
+            const name = req.params.name;
+            const selectedCatagory = singleCatagory.filter(s => s.name === name);
+            res.send(selectedCatagory)
+            // console.log(req.params.name);
         })
     }
     finally{
