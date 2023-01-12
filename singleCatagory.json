@@ -1,0 +1,89 @@
+[
+    {
+        "brand": "samsung",
+        "model": "Galaxy 21 ultra",
+        "img": "https://i.ibb.co/Sr54pS1/samsung-21-ultra.webp",
+        "location": "Dhaka",
+        "orginalPrice":90000,
+        "resalePrice": 30000,
+        "yearsOfUse": 3,
+        "postedDate": "21-10-2021",
+        "sellerName": "Rajib",
+        "name": "SAMSUNG"
+        },
+        
+         {
+        "brand": "samsung",
+        "model": "Galaxy note 22 ultra",
+        "img": "https://i.ibb.co/28Psch9/galaxy-note-22-ultra.jpg",
+        "location": "Dhaka",
+        "orginalPrice":140000,
+        "resalePrice": 90000,
+        "yearsOfUse": 2,
+        "postedDate": "21-10-2022",
+        "sellerName": "Raj",
+        "name": "SAMSUNG"
+         
+        },
+        {
+        "brand": "OnePlus",
+        "model": "OnePlus 10 pro",
+        "img":"https://i.ibb.co/tZcQ7Jx/One-Plus-10-Pro.jpg",
+        "location": "Dhaka",
+        "orginalPrice":60000,
+        "resalePrice": 40000,
+        "yearsOfUse": 1,
+        "postedDate": "21-10-2022",
+        "sellerName": "Rob",
+        "name": "ONEPLUS"
+        
+        
+        },
+        
+        {
+        "brand": "OnePlus",
+        "model": "OnePlus 10T",
+        "img": "https://i.ibb.co/16RF5XL/one-Plus10t.jpg",
+        "location": "Dhaka",
+        "orginalPrice":90000,
+        "resalePrice": 60000,
+        "yearsOfUse": 0.3,
+        "postedDate": "21-10-2022",
+        "sellerName": "Rajendro",
+        "name": "ONEPLUS"
+        
+            
+        },
+
+        {
+        "brand": "Apple",
+        "model": "Iphone 13 pro",
+        "img": "https://i.ibb.co/28zYms8/iphone-13-pro.jpg",
+        "location": "Dhaka",
+        "orginalPrice":130000,
+        "resalePrice": 80000,
+        "yearsOfUse": 1,
+        "postedDate": "24-11-2022",
+        "sellerName": "Robin",
+        "name": "APPLE"
+            
+            
+        },
+            
+        {
+        "brand": "Apple",
+        "model": "Iphone 14 pro",
+        "img": "https://i.ibb.co/893fM1Y/iphone-14pro.jpg",
+        "location": "Dhaka",
+        "orginalPrice":150000,
+        "resalePrice": 100000,
+        "yearsOfUse": 1,
+        "postedUate": "21-09-2022",
+        "sellerName": "Rajan",
+        "name": "APPLE"
+        
+            
+        }
+
+]
+    
