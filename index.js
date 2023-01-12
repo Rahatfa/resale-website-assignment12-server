@@ -1,5 +1,6 @@
 const express = require('express')
 const cors = require('cors');
+const jwt = require('jsonwebtoken');
 const { MongoClient, ServerApiVersion } = require('mongodb');
 require('dotenv').config();
 const port = process.env.PORT || 5000;
@@ -20,12 +21,13 @@ async function run(){
 
     try{
         const catagoriesCollection = client.db('MobileWorld').collection('catagories');
+        const singleCatagory = require('./singleCatagory.json');
 
-        app.get('/catagories',async(req, res) =>{
-            const query = {};
-            const options = await catagoriesCollection.find(query).toArray();
-            res.send(options);
-        });
+        app.post('/jwt', (req, res)=>{
+            const user = req.body;
+            const token = jwt.sign(user, process.env.ACCESS_TOKEN_SECRET, {expiresIn: '8d'})
+            res.send({token})
+        })
 
         app.get('/catagories/:id', (req, res) => {
             const id = req.params.id;
